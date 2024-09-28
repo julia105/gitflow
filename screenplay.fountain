@@ -1,0 +1,12 @@
+# Ziel von meiner Aufgabe
+
+TALKING HEAD JULIA
+Ich möchte eine Software bauen, die Badeseen nach ihrer Qualität auswertet.
+Meine Kriterien eines guten Badesees sind:
+- genug grüne Umgebung
+- gute Anbindung an Öffis
+- weit weg von Straßenlärm
+- gutes Ufer um ins Wasser zu gehen
+Ich möchte zwei Bereiche haben, in denen ich meinen Code ablege: einen Bereich für fertigen Code und einen Bereich, wo ich die nächsten Funktionen entwickle.
+Außerdem möchte ich meinen Code nicht nur auf meinem Rechner lokal speichern, sondern auch in einer Cloud - falls mein Rechner kaputt geht und ich von einem anderen Rechner aus arbeiten möchte.
+Aus diesen Gründen nutze ich GIT.
