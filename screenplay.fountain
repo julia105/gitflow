@@ -7,6 +7,14 @@ Meine Kriterien eines guten Badesees sind:
 - gute Anbindung an Öffis
 - weit weg von Straßenlärm
 - gutes Ufer um ins Wasser zu gehen
-Ich möchte zwei Bereiche haben, in denen ich meinen Code ablege: einen Bereich für fertigen Code und einen Bereich, wo ich die nächsten Funktionen entwickle.
-Außerdem möchte ich meinen Code nicht nur auf meinem Rechner lokal speichern, sondern auch in einer Cloud - falls mein Rechner kaputt geht und ich von einem anderen Rechner aus arbeiten möchte.
-Aus diesen Gründen nutze ich GIT.
+Ich möchte eine Ablage für meinen Code haben, die ich auch von anderen Rechnern aus erreichen kann. Ausserdem möchte ich, dass mein Quellcode auch in einer Cloud gespeichert wird, falls mein Rechner kaputt geht. Für dieses Problem hat sich in den letzten Jahren GIT als Standard etabliert, also verwende ich auch GIT.
+
+Architekturfolie: Julia zeigt in DrawIO ein Kästchen mit Funktion 1 und was Funktion 1 macht. Dann zeigt sie ein Kästchen mit Funktion 2 und was Funktion 2 macht. Kästchen 1 ist mit Kästchen 2 durch einen Pfeil verbunden.
+
+FOLIE
+Mein Projekt ist am Anfang und noch sehr rudimentär und enthält nur eine Funktion, die eine Excel Datei mit gespeicherten Werten einliest und auswertet. Damit dieser funktionierende Quellcode nicht verloren geht, speichere ich ihn in Git. Am nächsten Tag entwickle ich Funktion 2, die die Auswertung im Browser graphisch anzeigt. Auch diesen funktionieren Quellcode speichere ich in Git. So kann ich immer auf den letzten funktionierenden Stand zurückgreifen, falls ich einen Fehler bei der weiteren Entwicklung mache.
+
+Jetzt wird der Begriff "Commit" eingeführt. Abbildung von Git Commits.
+
+FOLIE
+Ein Commit ist ein Snapshot des Quellcodes zu einem bestimmten Zeitpunkt. Immer wenn ich Code in Git speichere, erzeuge ich damit einen neuen Commit. Typischerweise wenn ich eine Funktion implementiert habe, die funktioniert, dann mache ich einen Commit. So kann ich immer auf den letzten funktionierenden Stand zurückgreifen, falls ich einen Fehler bei der weiteren Entwicklung mache.
