@@ -14,14 +14,14 @@ Architekturfolie: Julia zeigt in DrawIO ein Kästchen mit Funktion 1 und was Fun
 FOLIE
 Mein Projekt ist am Anfang und noch sehr rudimentär und enthält nur eine Funktion, die eine Excel Datei mit gespeicherten Werten einliest und auswertet. Damit dieser funktionierende Quellcode nicht verloren geht, speichere ich ihn in Git. Am nächsten Tag entwickle ich Funktion 2, die die Auswertung im Browser graphisch anzeigt. Auch diesen funktionieren Quellcode speichere ich in Git. So kann ich immer auf den letzten funktionierenden Stand zurückgreifen, falls ich einen Fehler bei der weiteren Entwicklung mache.
 
+# Commit
+
 Jetzt wird der Begriff "Commit" eingeführt. Abbildung von Git Commits.
 
 FOLIE
 Ein Commit ist ein Zustand des Quellcodes zu einem bestimmten Zeitpunkt. Immer wenn ich Code in Git speichere, erzeuge ich damit einen neuen Commit. Typischerweise wenn ich eine Funktion entwickelt habe, die funktioniert, dann mache ich einen Commit. Ich kann zwischen den Zuständen meines Projektes hin und her springen, in der Historie meines Projektes so zu sagen, und kann sehen, wie sich mein Projekt entwickelt hat. So kann ich immer auf einen beliebigen funktionierenden Stand zurückgreifen, falls ich einen Fehler bei der weiteren Entwicklung mache. Die verschiedenen Zustände meines Projektes sind in Git in einer Art linearen Struktur gespeichert, die die zeitliche Abfolge meines Projektes abbildet. Jeder erfasste Zustand meines Projektes ist ein Commit. Die verschiedenen Commits bilden eine Commit Historie. Zusätzlich kann mir den Unterschied zwischen zwei beliebigen Commits anzeigen lassen.
 
-Julia zeigt, wie sie einen Ordner anlegt für ihre kompletten Quellcode und wie sie diesen Ordner in Git hinzufügt. In Visual Studio Code werden Datein eines Python Projektes in Git geaddet und ein Commit erstellt mit Kommentar.
+Julia zeigt, wie sie einen Projektordner "badeseen" anlegt für ihre kompletten Quellcode und wie sie diesen Ordner in Git hinzufügt. Julia erstellt einen Commit in VSC indem sie Dateien zum Commit added und einen Kommentar hinzufügt. Julia zeigt die Commit Historie in VSC (Source Control Graph in VSC).
 
 SCREENCAST
 Ich erstelle einen Ordner für den Quellcode meines Projekts. Dieser Ordner enthält mehrere Unterordner mit Dateien, die typischerweise während der Entwicklung erstellt werden. Ich kann bestimmen, welche Dateien in Git aufgenommen werden und welche nicht. Jedes Mal, wenn ich einen neuen Commit erstelle, werden meine Änderungen in Git gespeichert. Ein Commit enthält den kompletten Stand aller Dateien in meinem Projekt. Ich kann in einem Commit einen Kommentar hinterlassen, der beschreibt, was ich in diesem Commit gemacht habe. So kann ich später nachvollziehen, was ich in einem bestimmten Commit gemacht habe. Zusätzlich werden Zeitstempel und Autor des Commits gespeichert.
-
-Julia legt einen Ordner an mit dem Namen "badeseen".
