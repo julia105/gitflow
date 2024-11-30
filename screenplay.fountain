@@ -28,16 +28,25 @@ Ich erstelle einen Ordner für den Quellcode meines Projekts. Dieser Ordner enth
 
 ---
 
+# Voraussetzungen, Erwartungsmanagement
+- Kurs ist für PL, PO, nicht-Entwickler:innen
+- Einführung in Git für nicht-Techniker:innen
+- Release Prozesse und Stagekonzept erklären
+- Keine Programmierkenntnisse notwendig
+
 # Einführung
 - Projektvorstellung Badeseen
+- Web Anwendung um Badeseen zu bewerten
+- Umgang mit Wachstum von Komplexität in Softwareprojekten (Git, Release Engineering, Infrastruktur/Stages)
+- Roter Faden für den Kurs
 
 # Mit Git alleine arbeiten
 - Projekt anlegen + erste Funktion bauen und live stellen
 - Git Repository (remote und lokal)
-- Commit
-- Branches (develop und master)
-- Git Merge
-- Basisfunktionen von Git
+- Commit zeigen aus der technischen Sicht (Kreise und Pfeile + `git commit ...`)
+- Branches (develop und master) mit Kreise und Pfeile und wie es aussieht in Git
+- Git Merge (auf abstrakten und technischen Level)
+- Basisfunktionen von Git (kurz anreißen)
 
 # Git im Team (Git Flow)
 - Problem 1:
@@ -45,33 +54,39 @@ Ich erstelle einen Ordner für den Quellcode meines Projekts. Dieser Ordner enth
   Lösung 1:
     - Feature Branches
 - Problem 2:
-    - Software wird released
+    - Software wird released, geht auf Produktion
   Lösung 2:
-    - Release Branch
+    - Release Branch (Version einzufrieren)
 - Problem 3:
     - Software hat ein Bug nach Release auf Produktion
   Lösung 3:
     - Hotfix Branch
 
 # Release Engineering
-- Stagekonzept 
-  - develop
-    - dev (für Entwickler) -> develop Branch
-    - test (für Tester) -> release Branch (Version 2.0.5 -> Git Tag)
-  - UAT (user acceptence test)
+- Infrastruktur
+- Stagekonzept (wir sind auf PROD und es gibt eine nächste Version)
+  - Team (Entwickler, Tester) ist zuständig
+    - DEV (für Entwickler) -> develop Branch
+    - TEST (für Tester) -> release Branch (Version 2.0.5 -> Git Tag)
+    - MAINTENANCE (für Hotfixes) -> hotfix Branch
+  - UAT (user acceptence test) / STAGE Umgebung (feste Version 2.0.5, Kandidat für PROD, Release Candidate)
     - mit unterschriebener Abnahmeerklärung Kunde/PO
   - PROD
+  - Rollback Konzept, Deployment in PROD z.B. Hotfix, Rollback auf vorherige Version (2.0.4), Version aus Git
 - Versionierung anhand unseres Beispielprojektes erklären
   - Version 2.0.5 (1 Zahl: Major, 2 Zahl: Minor, 3 Zahl: Patch)
   - Semantic Versioning https://semver.org/
 - CHANGELOG.md und semantic git commits https://gist.github.com/joshbuchea/6f47e86d2510bce28f8e7f42ae84c716
-
+  Release Notes (was ist neu in der Version 2.0.5)
 
 # Infrastruktur
   - Infrastruktur as a Code (Bestandteile einer Infrastruktur) werden z.B. in yaml Dateien gespeichert und in einem extra Git Repository abgelegt) -> Terraform, GitOps
-  - Git Repository für Infrastruktur 
-  - Hintergrundprozess der dieses Git Repository ausliest und die Infrastruktur aufbaut
+  - Git Repository für Infrastruktur (Historie der Infrastruktur)
+  - Hintergrundprozess der dieses Git Repository ausliest und die Infrastruktur aufbaut (ArgoCD)
   - Gedanken: zwei Repositories in GitHub aufbauen (ein Repository für den Quellcode und ein Repository für die Infrastruktur)
   - zusätzlich: in Miro ein Diagramm erstellen für Infrastructure as a Code
+  - Unterschiedliche Stages aus einer Vorlage aufbauen (Vorteile: Wiederholbarkeit, Konsistenz, Automatisierung)
 
-
+# Fazit
+  - Zusammenfassung des kompletten Kurses
+  - Cheat Sheet vorbereiten für die Teilnehmer:innen
